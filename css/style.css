@@ -18,6 +18,53 @@ body {
   color: black;
   display: flex;
   flex-direction: column;
+  border-radius: 6px;
 }
-#calc h3 {
+h3 {
+  font-size: 0.8em;
+  font-weight: 300;
+  color: #666;
+}
+#operations {
+  text-align: right;
+}
+#previous-operations,
+#current-operations {
+  padding: 0.2em;
+  overflow-wrap: break-word;
+  min-height: 1.6em;
+}
+#previous-operations {
+  color: #777;
+}
+#current-operations {
+  font-weight: 700;
+  font-size: 3em;
+}
+#buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3px;
+}
+#buttons button {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  height: 4em;
+  font-size: 1.2em;
+  background-color: #dbdbdb;
+  cursor: pointer;
+}
+#buttons .numberbtn {
+  background-color: #f3f3f3;
+}
+#buttons button:hover {
+  background-color: #bababa;
+  border-color: 0, #999;
+}
+#buttons #equal-btn {
+  grid-column: span 2;
+  background-color: #75a5cb;
+}
+#buttons #equal-btn:hover {
+  background-color: #3a91d8;
 }
